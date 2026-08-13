@@ -97,11 +97,11 @@ MENDER_PARTITION_SCHEME=""
 # (see MENDER_BOOT_PART_SIZE_MB) and data partitions
 # (see MENDER_DATA_PART_SIZE_MB).
 #
-MENDER_STORAGE_TOTAL_SIZE_MB="8192"
+# MENDER_STORAGE_TOTAL_SIZE_MB="8192"
 
 # The size of the boot partition in the generated .biosimg, .sdimg or .uefiimg
 # file.
-MENDER_BOOT_PART_SIZE_MB="40"
+MENDER_BOOT_PART_SIZE_MB="256"
 
 # The size of the persistent data partition in the generated .biosimg, .sdimg
 # or .uefiimg file.
@@ -127,23 +127,23 @@ MENDER_CLIENT_INSTALL="y"
 # Valid values are "auto" (default), "latest", "master" or a specific version
 # If set to "auto", install the latest version available for the given
 # distribution.
-MENDER_CLIENT_VERSION="auto"
+MENDER_CLIENT_VERSION="master"
 
 # Mender flash version
 #
 # This is used to fetch the correct binaries
 #
 # Valid values are "latest" (default), "master" or a specific version
-MENDER_FLASH_VERSION="latest"
+MENDER_FLASH_VERSION="master"
 
 # Install Mender Connect addon
 #
-MENDER_ADDON_CONNECT_INSTALL="n"
+MENDER_ADDON_CONNECT_INSTALL="y"
 
 # Mender Connect addon version
 #
 # Valid values are "latest" (default), "master" or a specific version
-MENDER_ADDON_CONNECT_VERSION="latest"
+MENDER_ADDON_CONNECT_VERSION="master"
 
 # Install Mender Configure addon
 #
@@ -152,7 +152,7 @@ MENDER_ADDON_CONFIGURE_INSTALL="n"
 # Mender Configure addon version
 #
 # Valid values are "latest" (default), "master" or a specific version
-MENDER_ADDON_CONFIGURE_VERSION="latest"
+MENDER_ADDON_CONFIGURE_VERSION="master"
 
 # Install docker-compose Update Module
 #
@@ -161,7 +161,7 @@ MENDER_DOCKER_COMPOSE_INSTALL="n"
 # docker-compose Update Module version
 #
 # Valid values are "latest" (default), "main" or a specific version
-MENDER_DOCKER_COMPOSE_VERSION="latest"
+MENDER_DOCKER_COMPOSE_VERSION="master"
 
 # Install arbitrary debian packages by placing them in
 # MENDER_INSTALL_INPUT_PACKAGES_PATH.
@@ -184,7 +184,7 @@ MENDER_SETUP_INSTALL="auto"
 # Mender-setup version
 #
 # Valid values are "latest" (default), "master" or a specific version
-MENDER_SETUP_VERSION="latest"
+MENDER_SETUP_VERSION="master"
 
 # Install Mender-snapshot
 # If set to "auto" then it is installed if Mender client 4.0 or later is
@@ -196,7 +196,7 @@ MENDER_SNAPSHOT_INSTALL="auto"
 # Mender-snapshot version
 #
 # Valid values are "latest" (default), "master" or a specific version
-MENDER_SNAPSHOT_VERSION="latest"
+MENDER_SNAPSHOT_VERSION="master"
 
 # Install Mender-client-version-inventory-script
 # If set to "auto" then it is not explicitly installed; Mender client 5.1.0 or later
@@ -206,12 +206,12 @@ MENDER_SNAPSHOT_VERSION="latest"
 # then result in an error
 # Setting it to "n" has no effect
 # The recommended option is "y"
-MENDER_CLIENT_VERSION_INVENTORY_SCRIPT_INSTALL="y"
+MENDER_CLIENT_VERSION_INVENTORY_SCRIPT_INSTALL=""
 
 # Mender-client-version-inventory-script version
 #
 # Valid values are "latest" (default), "master" or a specific version
-MENDER_CLIENT_VERSION_INVENTORY_SCRIPT_VERSION="latest"
+MENDER_CLIENT_VERSION_INVENTORY_SCRIPT_VERSION="master"
 
 # Mender sparse image file generation
 #

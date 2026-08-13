@@ -20,4 +20,8 @@ MENDER_DEVICE_TYPE="qemux86-64"
 # Nothing to copy
 MENDER_COPY_BOOT_GAP="n"
 
-MENDER_SPARSE_IMAGE="y"
+MENDER_SPARSE_IMAGE="n"
+MENDER_STORAGE_TOTAL_SIZE_MB=17000
+
+# Serial console for QEMU nographic mode
+GRUB_CMDLINE_LINUX="console=tty1 console=ttyS0"
