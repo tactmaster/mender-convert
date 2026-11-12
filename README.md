@@ -55,6 +55,8 @@ These configurations are officially supported.
 | generic_x86-64_hdd_config | Generic x86, 64bit distribution *use this as a starting point only!*  |
 | raspberrypi/uboot/debian/raspberrypi3_bookworm_64bit_config | RaspberryPi 3, Raspberry Pi OS "bookworm" 64bit |
 | raspberrypi/uboot/debian/raspberrypi4_bookworm_64bit_config | RaspberryPi 4, Raspberry Pi OS "bookworm" 64bit |
+| raspberrypi/uboot/debian/raspberrypi4_trixie_64bit_config | RaspberryPi 4, Raspberry Pi OS "trixie" 64bit |
+| raspberrypi/uboot/debian/raspberrypi5_trixie_64bit_config | RaspberryPi 5, Raspberry Pi OS "trixie" 64bit |
 | raspberrypi/uboot/ubuntu/raspberrypi4_ubuntu_32bit_config | RaspberryPi 4, Ubuntu 32bit |
 
 Raspberry Pi OS 32bit is not supported. The Mender Client packages are built
@@ -70,6 +72,7 @@ These configurations have been submitted by community contributors.
 | :------------ | :---------------------- |
 | rockpro64_emmc_config | RockPro64, Debian 32bit on internal eMMC storage |
 | rockpro64_sd_config | RockPro64, Debian 32bit on external SD card storage |
+| raspberrypi/uefi/debian/raspberrypi4_bookworm_64bit_config | RaspberryPi 4, Raspberry Pi OS "bookworm" 64bit, booting through UEFI |
 
 ## Example usage: Raspberry Pi 4, Raspberry Pi OS 64bit
 
